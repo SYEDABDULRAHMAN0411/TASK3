@@ -1,0 +1,32 @@
+.resizable-image {
+  position: relative;
+  overflow: hidden;
+  height: 300px; /* Set a fixed height for the container */
+}
+
+.resizable-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop the image to cover the container without stretching */
+}
+
+.center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body {
+  background-image: url('bgimage.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to make text readable */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
